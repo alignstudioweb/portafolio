@@ -18,26 +18,26 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           <div className="hero-text-col reveal-up">
             <div className="badge">
               <span className="badge-dot"></span>
-              <span>AGENCIA DIGITAL // ALTO IMPACTO</span>
+              <span>ESTUDIO DE DESARROLLO WEB // ALTO RENDIMIENTO</span>
             </div>
 
             <h1 className="hero-title">
-              Agencia de <span className="text-gradient">Diseño & Desarrollo Web</span> Premium para Empresas.
+              Desarrollo Web & <span className="text-gradient">Soluciones Digitales</span> para Empresas e Industrias.
             </h1>
 
             <p className="hero-subtitle">
               <span className="font-accent">
-                &quot;En ALIGN STUDIO diseñamos y desarrollamos sitios web modernos, rápidos y estratégicos para empresas que buscan destacar en el mundo digital.&quot;
+                &quot;Creamos sitios institucionales, catálogos con CMS y plataformas e-commerce a la medida con tecnología de vanguardia para impulsar negocios en Rafaela y la región.&quot;
               </span>
             </p>
 
             <div className="hero-buttons">
               <button className="btn btn-primary btn-lg" onClick={() => onOpenContact()}>
-                <span>Comenzar un proyecto</span>
+                <span>Solicitar Presupuesto</span>
                 <Sparkles style={{ width: 20, height: 20 }} />
               </button>
-              <a href="#portafolio" className="btn btn-secondary btn-lg">
-                <span>Ver proyectos</span>
+              <a href="#servicios" className="btn btn-secondary btn-lg">
+                <span>Ver Paquetes Web</span>
                 <ArrowDown style={{ width: 18, height: 18 }} />
               </a>
             </div>
@@ -46,15 +46,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             <div className="hero-features-list">
               <div className="hero-feature-item">
                 <Zap className="hero-feature-icon" style={{ width: 18, height: 18 }} />
-                <span>Velocidad Ultra Rápida</span>
+                <span>Next.js & Supabase</span>
               </div>
               <div className="hero-feature-item">
                 <ShieldCheck className="hero-feature-icon" style={{ width: 18, height: 18 }} />
-                <span>Diseño UI/UX Premium</span>
+                <span>Integración MercadoPago</span>
               </div>
               <div className="hero-feature-item">
                 <Bot className="hero-feature-icon" style={{ width: 18, height: 18 }} />
-                <span>Integración de IA</span>
+                <span>Automatización WhatsApp</span>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
               </div>
               <Image
                 src="/assets/hero_mockup.jpg"
-                alt="ALIGN STUDIO - Agencia de Diseño y Desarrollo Web Mockup"
+                alt="ALIGN STUDIO - Desarrollo Web e Ingeniería Digital Mockup"
                 width={600}
                 height={420}
                 className="hero-mockup-img"

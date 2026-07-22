@@ -7,43 +7,43 @@ import { Project } from '@/types';
 export const portfolioData: Project[] = [
   {
     id: 1,
-    title: 'Apex Cloud SaaS Platform',
+    title: 'Portal Industrial & Metalmecánico Pyme',
     category: 'desarrollo',
-    categoryLabel: 'Desarrollo Web & SaaS',
+    categoryLabel: 'Web Institucional / Muestra',
     image: '/assets/portfolio_1.jpg',
-    desc: 'Plataforma web de analítica en tiempo real para startups tecnológicas con arquitectura ultra rápida.',
-    fullDesc: 'Apex Cloud es una plataforma diseñada con Next.js y TailwindCSS enfocada en velocidad y análisis de métricas en tiempo real. Incluye integración de base de datos distribuida, autenticación sin fricción y dashboards adaptativos de alta fidelidad.',
-    tags: ['Next.js', 'TypeScript', 'Tailwind', 'Analytics']
+    desc: 'Sitio corporativo con catálogo de maquinaria, certificaciones de calidad y vías de contacto directo por WhatsApp.',
+    fullDesc: 'Desarrollado para una importante pyme industrial con React, Next.js y TailwindCSS. Presenta capacidad de producción, certificaciones ISO, mapa de ubicación estratégica y canal directo de presupuestos.',
+    tags: ['Web Institucional', 'Next.js', 'SEO Local', 'Pyme Metalmecánica']
   },
   {
     id: 2,
-    title: 'Verve Luxury E-Commerce',
+    title: 'Catálogo Autopatio & Inmobiliaria Dinámico',
     category: 'diseno',
-    categoryLabel: 'Diseño Web & E-Commerce',
+    categoryLabel: 'Catálogo Web (Con CMS / Supabase)',
     image: '/assets/portfolio_2.jpg',
-    desc: 'Experiencia de compra minimalista de alta gama inspirada en el diseño nórdico.',
-    fullDesc: 'Rediseño integral de e-commerce enfocado en la conversión premium. Diseñado con una interfaz fluida, animación de productos en 3D, checkout optimizado en 1-paso y sistema de recomendación inteligente.',
-    tags: ['UI/UX', 'Shopify Plus', 'WebGL', 'Branding']
+    desc: 'Catálogo de vehículos y propiedades con buscador inteligente, filtros avanzados y panel de administración en tiempo real.',
+    fullDesc: 'Plataforma de gestión de activos desarrollada con Next.js y Supabase (PostgreSQL, Storage). Permite al equipo comercial actualizar inventario, subir galerías de fotos y recibir consultas pre-referenciadas por WhatsApp.',
+    tags: ['Catálogo CMS', 'Supabase', 'Buscador Avanzado', 'WhatsApp API']
   },
   {
     id: 3,
-    title: 'Krypton AI Workflow Engine',
+    title: 'Plataforma E-Commerce & MercadoPago SDK',
     category: 'ia',
-    categoryLabel: 'Inteligencia Artificial & Auto',
+    categoryLabel: 'E-Commerce Custom a Medida',
     image: '/assets/portfolio_3.jpg',
-    desc: 'Sistema de automatización de flujos de trabajo con agentes IA visuales y procesamiento masivo.',
-    fullDesc: 'Plataforma de automatización que permite a empresas conectar modelos LLM como OpenAI y Claude con sus bases de conocimientos internas mediante un editor de nodos interactivo y ejecuciones paralelas.',
-    tags: ['OpenAI API', 'Node.js', 'Python', 'Automation']
+    desc: 'Tienda transaccional con checkout optimizado, cobros automatizados con MercadoPago y gestión de envíos.',
+    fullDesc: 'E-Commerce custom diseñado a la medida con Next.js, Node.js y Supabase. Cuenta con integración nativa de cuotas MercadoPago, control automático de stock y notificaciones de envío.',
+    tags: ['E-Commerce', 'MercadoPago', 'Node.js', 'Control Stock']
   },
   {
     id: 4,
-    title: 'Nexus Fintech Rebrand & Web',
+    title: 'Setup & Design Tienda Nube Express',
     category: 'branding',
-    categoryLabel: 'Branding & Web Strategy',
+    categoryLabel: 'Tienda Nube (Setup & Capacitación)',
     image: '/assets/portfolio_4.jpg',
-    desc: 'Sistema de identidad corporativa global y presencia digital interactiva para neobanco de inversión.',
-    fullDesc: 'Desarrollo de estrategia de marca completa, sistema de diseño escalable, manual de marca interactivo y desarrollo web corporativo optimizado para conversión B2B.',
-    tags: ['Branding', 'UI/UX', 'Vite', 'Design System']
+    desc: 'Configuración estética, banners institucionales, pasarelas de pago y capacitación 1 a 1 para marca de indumentaria.',
+    fullDesc: 'Puesta a punto completa en tiempo récord de 72 hs. Incluye vinculación de dominio .com.ar, configuración de cuotas sin interés y capacitación ejecutiva para gestión autónoma.',
+    tags: ['Tienda Nube', 'Branding Banners', 'Setup Express', 'Capacitación 1a1']
   }
 ];
 
@@ -55,11 +55,11 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onOpenProjectModal
   const [filter, setFilter] = useState<string>('todos');
 
   const filterButtons = [
-    { label: 'Todos', key: 'todos' },
-    { label: 'Desarrollo Web', key: 'desarrollo' },
-    { label: 'Diseño Web & E-Commerce', key: 'diseno' },
-    { label: 'IA & Automatización', key: 'ia' },
-    { label: 'Branding', key: 'branding' }
+    { label: 'Todos los Desarrollos', key: 'todos' },
+    { label: 'Webs Institucionales', key: 'desarrollo' },
+    { label: 'Catálogos Dinámicos', key: 'diseno' },
+    { label: 'E-Commerce Custom', key: 'ia' },
+    { label: 'Tienda Nube Setup', key: 'branding' }
   ];
 
   const filteredProjects = filter === 'todos'
@@ -70,10 +70,10 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onOpenProjectModal
     <section className="portfolio-section" id="portafolio">
       <div className="container">
         <div className="section-header reveal-up">
-          <span className="badge">PORTAFOLIO DESTACADO</span>
-          <h2 className="section-title">Nuestros proyectos de exhibición</h2>
+          <span className="badge">CASOS DE ÉXITO & PORTAFOLIO</span>
+          <h2 className="section-title">Proyectos Desarrollados por Nuestro Equipo</h2>
           <p className="section-subtitle">
-            Explora los desarrollos y conceptos de interfaz creados por nuestro equipo.
+            Ejemplos reales de soluciones web diseñadas para resolver necesidades comerciales e industriales.
           </p>
         </div>
 
@@ -115,7 +115,7 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onOpenProjectModal
                       fontWeight: 700,
                       color: 'var(--color-align-royal)'
                     }}>
-                      Ver detalle →
+                      Ver detalle del proyecto →
                     </span>
                   </div>
                 </div>

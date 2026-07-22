@@ -961,21 +961,73 @@ button {
 .delay-200 { transition-delay: 0.2s; }
 .delay-300 { transition-delay: 0.3s; }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .hero-layout {
-    grid-template-columns: 1fr;
-  }
-  
-  .about-bento, .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .cat-slide {
-    grid-template-columns: 1fr;
-    padding: 2rem;
-  }
+/* Paquetes Comercial Fase 1 Grid */
+.main-packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
+
+.comp-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.package-card {
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 1px solid var(--glass-border);
+  background: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-normal);
+}
+
+.package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: rgba(0, 168, 232, 0.35);
+}
+
+.package-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.package-time-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-studio-blue);
+  margin-bottom: 1.25rem;
+  padding: 0.4rem 0.75rem;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+}
+
+.package-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+}
+
+.package-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-main);
+}
+
 
 @media (max-width: 640px) {
   .about-bento, .services-grid, .portfolio-grid {

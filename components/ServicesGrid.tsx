@@ -1,60 +1,111 @@
 'use client';
 
 import React from 'react';
-import { Monitor, Code, Rocket, Layers, Sparkle, Search, RefreshCw, Bot, ShoppingBag, ArrowRight } from 'lucide-react';
+import { ArrowRight, CheckCircle, Clock } from 'lucide-react';
+import { mainPackages, complementaryServices } from '@/lib/servicesData';
 
 interface ServicesGridProps {
   onOpenContact: (serviceName: string) => void;
 }
 
 export const ServicesGrid: React.FC<ServicesGridProps> = ({ onOpenContact }) => {
-  const services = [
-    { icon: Monitor, title: 'Diseño Web', desc: 'Maquetación web minimalista y moderna orientada a comunicar autoridad y elegancia.' },
-    { icon: Code, title: 'Desarrollo Web', desc: 'Programación rápida y confiable para portales corporativos, plataformas y aplicaciones web.' },
-    { icon: Rocket, title: 'Landing Pages', desc: 'Páginas de aterrizaje de alta conversión para lanzamientos y campañas publicitarias.' },
-    { icon: Layers, title: 'UI / UX', desc: 'Prototipado interactivo, arquitectura de información y testeos de usabilidad.' },
-    { icon: Sparkle, title: 'Branding', desc: 'Creación de identidad visual completa: logotipos, paletas de color y activos digitales.' },
-    { icon: Search, title: 'SEO', desc: 'Optimización técnica para posicionar tu negocio en los primeros lugares de búsqueda.' },
-    { icon: RefreshCw, title: 'Automatización', desc: 'Flujos automáticos para captura de prospectos y conexión con tus herramientas de trabajo.' },
-    { icon: Bot, title: 'Integraciones con IA', desc: 'Implementación de asistentes inteligentes y modelos de IA en tu sitio web.' },
-    { icon: ShoppingBag, title: 'E-Commerce', desc: 'Tiendas online seguras y optimizadas para ventas rápidas con pasarelas de pago.' }
-  ];
-
   return (
     <section className="services-section" id="servicios">
       <div className="container">
+        
         <div className="section-header reveal-up">
-          <span className="badge">NUESTROS SERVICIOS</span>
-          <h2 className="section-title">Servicios de Desarrollo Web, UI/UX e Integración de IA</h2>
+          <span className="badge">NUESTRA OFERTA COMERCIAL</span>
+          <h2 className="section-title">Paquetes de Desarrollo Web & Soluciones Digitales</h2>
           <p className="section-subtitle">
-            Soluciones integrales diseñadas con estándares internacionales de usabilidad y rendimiento.
+            Propuestas estratégicas diseñadas a la medida de comercios, pymes e industrias del polo productivo.
           </p>
         </div>
 
-        <div className="services-grid">
-          {services.map((srv, index) => {
-            const IconComponent = srv.icon;
-            const delayClass = `delay-${((index % 3) + 1) * 100}`;
+        <div className="main-packages-grid">
+          {mainPackages.map((pkg, index) => {
+            const IconComp = pkg.icon;
             return (
-              <div key={index} className={`service-card reveal-up ${delayClass}`}>
+              <div key={index} className="package-card reveal-up">
                 <div>
-                  <div className="service-icon-box">
-                    <IconComponent style={{ width: 24, height: 24 }} />
+                  <div className="package-card-header">
+                    <div className="service-icon-box" style={{ margin: 0 }}>
+                      <IconComp style={{ width: 26, height: 26 }} />
+                    </div>
+                    <span className="badge" style={{ fontSize: '0.75rem', padding: '0.25rem 0.75rem' }}>
+                      {pkg.badge}
+                    </span>
                   </div>
-                  <h3>{srv.title}</h3>
-                  <p>{srv.desc}</p>
+
+                  <h3 style={{ fontSize: '1.35rem', color: 'var(--color-align-royal)', marginBottom: '0.5rem' }}>
+                    {pkg.title}
+                  </h3>
+
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1.25rem', minHeight: '44px' }}>
+                    <strong>Ideal para:</strong> {pkg.target}
+                  </p>
+
+                  <div className="package-time-badge">
+                    <Clock style={{ width: 16, height: 16 }} />
+                    <span>Desarrollo: {pkg.time}</span>
+                  </div>
+
+                  <ul className="package-feature-list">
+                    {pkg.features.map((feat, fIdx) => (
+                      <li key={fIdx} className="package-feature-item">
+                        <CheckCircle style={{ width: 16, height: 16, color: 'var(--color-cyan-bright)', flexShrink: 0, marginTop: '2px' }} />
+                        <span>{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
+
                 <button
                   type="button"
-                  onClick={() => onOpenContact(srv.title)}
-                  className="service-link"
+                  onClick={() => onOpenContact(pkg.title)}
+                  className="btn btn-primary"
+                  style={{ width: '100%', justifyContent: 'center' }}
                 >
-                  Solicitar servicio <ArrowRight style={{ width: 16, height: 16 }} />
+                  <span>Solicitar Propuesta</span>
+                  <ArrowRight style={{ width: 16, height: 16 }} />
                 </button>
               </div>
             );
           })}
         </div>
+
+        <div style={{ marginTop: '3.5rem' }}>
+          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+            <span className="badge" style={{ background: 'rgba(37, 99, 235, 0.06)' }}>SERVICIOS COMPLEMENTARIOS</span>
+            <h3 style={{ fontSize: '1.6rem', color: 'var(--color-align-royal)', marginTop: '0.5rem' }}>
+              Servicios Especializados de Alto Valor
+            </h3>
+          </div>
+
+          <div className="comp-services-grid">
+            {complementaryServices.map((comp, cIdx) => {
+              const CompIcon = comp.icon;
+              return (
+                <div
+                  key={cIdx}
+                  className="about-bento-card reveal-up"
+                  style={{ padding: '1.5rem', cursor: 'pointer' }}
+                  onClick={() => onOpenContact(comp.title)}
+                >
+                  <div className="about-icon" style={{ width: 44, height: 44, marginBottom: '1rem' }}>
+                    <CompIcon style={{ width: 22, height: 22 }} />
+                  </div>
+                  <h4 style={{ fontSize: '1.1rem', color: 'var(--color-align-royal)', marginBottom: '0.4rem' }}>
+                    {comp.title}
+                  </h4>
+                  <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>
+                    {comp.desc}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
       </div>
     </section>
   );

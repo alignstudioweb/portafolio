@@ -10,31 +10,31 @@ export const CatCarousel: React.FC = () => {
   const slides = [
     {
       step: 'PASO // 01',
-      title: '1. Descubrimiento',
-      desc: 'Analizamos los objetivos de tu negocio, tu audiencia clave y requerimientos técnicos para trazar la hoja de ruta perfecta para tu proyecto.',
+      title: '1. Primer Contacto & Briefing',
+      desc: 'Analizamos los objetivos de tu negocio, requerimientos del catálogo o tienda y audiencia clave para seleccionar el paquete web ideal para tu empresa.',
       img: '/assets/cat_discovery.jpg',
-      alt: 'Proceso de Desarrollo Web - Paso 1: Descubrimiento y Requerimientos'
+      alt: 'Metodología ALIGN STUDIO - Paso 1: Briefing y Análisis de Requerimientos Comercial'
     },
     {
       step: 'PASO // 02',
-      title: '2. Estrategia',
-      desc: 'Diseñamos la estructura de contenidos, los wireframes iniciales y el plan UX pensado en convertir a tus visitantes en clientes fieles.',
+      title: '2. Propuesta Comercial & Estrategia',
+      desc: 'Diseñamos la estructura de contenidos, propuesta de presupuesto transparente, tiempos de entrega garantizados y plan de arquitectura técnica.',
       img: '/assets/cat_strategy.jpg',
-      alt: 'Proceso de Desarrollo Web - Paso 2: Estrategia de Contenidos y UX'
+      alt: 'Metodología ALIGN STUDIO - Paso 2: Propuesta Comercial y Estrategia UX'
     },
     {
       step: 'PASO // 03',
-      title: '3. Diseño',
-      desc: 'Construimos la interfaz gráfica refinada con tipografías elegantes, animaciones fluidas y microinteracciones de nivel premium.',
+      title: '3. Desarrollo & Integración',
+      desc: 'Construimos la plataforma con React, Next.js y Supabase/MercadoPago. Interfaz refinada, panel de administración intuitivo y velocidad ultra rápida.',
       img: '/assets/cat_design.jpg',
-      alt: 'Proceso de Diseño Web - Paso 3: Prototipado e Interfaz UI/UX'
+      alt: 'Metodología ALIGN STUDIO - Paso 3: Desarrollo Web, UI/UX y Panel Backend'
     },
     {
       step: 'PASO // 04',
-      title: '4. Desarrollo y Lanzamiento',
-      desc: 'Programación limpia, optimización SEO de alta velocidad, pruebas finales y puesta en marcha oficial de tu nueva plataforma.',
+      title: '4. Entrega, Salida a Producción & Capacitación',
+      desc: 'Puesta en marcha del dominio (.com.ar), optimización SEO local, pruebas de pasarelas de pago y capacitación 1 a 1 para la gestión autónoma del sitio.',
       img: '/assets/cat_launch.jpg',
-      alt: 'Proceso de Desarrollo Web - Paso 4: Programación, Optimización SEO y Lanzamiento'
+      alt: 'Metodología ALIGN STUDIO - Paso 4: Salida a Producción, SEO Local y Capacitación'
     }
   ];
 
@@ -57,10 +57,10 @@ export const CatCarousel: React.FC = () => {
     <section className="cat-process-section" id="proceso">
       <div className="container">
         <div className="section-header reveal-up">
-          <span className="badge">🐱 METODOLOGÍA // ALIGN</span>
-          <h2 className="section-title">Nuestro Proceso de Desarrollo Web Paso a Paso</h2>
+          <span className="badge">🐱 METODOLOGÍA // ALIGN STUDIO</span>
+          <h2 className="section-title">Flujo de Trabajo Comercial & Desarrollo Paso a Paso</h2>
           <p className="section-subtitle">
-            Conoce cómo transformamos tu proyecto en una realidad digital de alto nivel.
+            Transparencia total desde la toma de requerimientos hasta el lanzamiento y capacitación de tu equipo.
           </p>
         </div>
 

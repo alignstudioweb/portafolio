@@ -1,39 +1,39 @@
 'use client';
 
 import React from 'react';
-import { Compass, Code2, Layout, Palette, Workflow, Cpu } from 'lucide-react';
+import { Code2, Database, CreditCard, Store, Search, MessageSquareCode } from 'lucide-react';
 
 export const AboutBento: React.FC = () => {
   const items = [
     {
-      icon: Compass,
-      title: 'Diseño Estratégico',
-      desc: 'Capturamos la atención de tus clientes ideales mediante una estructura clara, limpia y enfática en la conversión.'
-    },
-    {
       icon: Code2,
-      title: 'Desarrollo Web',
-      desc: 'Código limpio de última generación. Sitios web rápidos, seguros, responsivos y preparados para escalar.'
+      title: 'Frontend de Alto Rendimiento',
+      desc: 'Desarrollamos con React, Next.js y TailwindCSS para garantizar carga ultrarrápida, SEO perfecto y navegación fluida.'
     },
     {
-      icon: Layout,
-      title: 'UI / UX de Vanguardia',
-      desc: 'Interfaces dinámicas y elegantes inspiradas en Apple y Vercel, ofreciendo navegación fluida e intuitiva.'
+      icon: Database,
+      title: 'Backend Dynamic & Supabase',
+      desc: 'Bases de datos PostgreSQL en Supabase, autenticación segura y paneles de administración dinámicos para catálogos.'
     },
     {
-      icon: Palette,
-      title: 'Branding',
-      desc: 'Identidades visuales inolvidables. Logotipos, paletas cromáticas y guías de estilo con personalidad propia.'
+      icon: CreditCard,
+      title: 'Integración de Cobros & Envíos',
+      desc: 'Pasarelas nativas con MercadoPago (cuotas y saldo) y logística con Andreani, Correo Argentino o retiros.'
     },
     {
-      icon: Workflow,
-      title: 'Automatización',
-      desc: 'Conectamos tu web con sistemas de pago, agendamiento y bases de datos para automatizar tus operaciones.'
+      icon: Store,
+      title: 'Especialistas en Tienda Nube',
+      desc: 'Puesta a punto express para emprendedores, diseño de banners institucionales y capacitación ejecutiva 1 a 1.'
     },
     {
-      icon: Cpu,
-      title: 'Inteligencia Artificial',
-      desc: 'Agentes virtuales y soluciones inteligentes adaptadas a la medida de los objetivos de tu empresa.'
+      icon: Search,
+      title: 'SEO Local & Google Business',
+      desc: 'Posicionamiento estratégico en Google para destacar ante industrias, empresas y clientes de Rafaela y región.'
+    },
+    {
+      icon: MessageSquareCode,
+      title: 'Automatización & WhatsApp',
+      desc: 'Formularios con alertas por e-mail y botones de consulta directa a WhatsApp pre-cargando la referencia de interés.'
     }
   ];
 
@@ -41,10 +41,10 @@ export const AboutBento: React.FC = () => {
     <section className="about-section" id="sobre-nosotros">
       <div className="container">
         <div className="section-header reveal-up">
-          <span className="badge">SOBRE NOSOTROS</span>
-          <h2 className="section-title">Diseño web estratégico e ingeniería digital a la medida</h2>
+          <span className="badge">NUESTRA PROPUESTA DE VALOR</span>
+          <h2 className="section-title">Tecnología Moderna & Soluciones a la Medida de Tu Negocio</h2>
           <p className="section-subtitle">
-            Unimos creatividad avanzada y tecnología moderna para transformar la presencia de tu marca en un motor de ventas.
+            Combinamos ingeniería de software avanzada y visión comercial para transformar tu presencia en internet en un canal rentable.
           </p>
         </div>
 
