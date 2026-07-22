@@ -564,7 +564,7 @@ button {
   background-color: var(--bg-primary);
 }
 
-.portfolio-filters {
+.portfolio-filters-desktop {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -577,12 +577,52 @@ button {
   flex-wrap: wrap;
   width: fit-content;
   max-width: 100%;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
 
-.portfolio-filters::-webkit-scrollbar {
+.portfolio-filters-mobile {
   display: none;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.portfolio-dropdown-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--bg-secondary);
+  border: 1.5px solid rgba(37, 99, 235, 0.25);
+  border-radius: var(--radius-pill);
+  padding: 0 1rem;
+  box-shadow: var(--shadow-subtle);
+  transition: all var(--transition-fast);
+}
+
+.portfolio-dropdown-box:focus-within {
+  border-color: var(--color-align-royal);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.portfolio-select-dropdown {
+  width: 100%;
+  padding: 0.8rem 2.25rem 0.8rem 0.6rem;
+  font-family: var(--font-h3);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-align-royal);
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.portfolio-dropdown-icon {
+  position: absolute;
+  right: 1.25rem;
+  pointer-events: none;
+  color: var(--color-align-royal);
 }
 
 .filter-btn {
@@ -1105,6 +1145,14 @@ button {
 }
 
 @media (max-width: 768px) {
+  .portfolio-filters-desktop {
+    display: none !important;
+  }
+
+  .portfolio-filters-mobile {
+    display: block !important;
+  }
+
   .hero-title {
     font-size: clamp(2rem, 6.5vw, 2.75rem);
   }
@@ -1119,14 +1167,6 @@ button {
 
   .portfolio-img-wrapper {
     height: 240px;
-  }
-
-  .portfolio-filters {
-    gap: 0.5rem;
-    overflow-x: auto;
-    padding-bottom: 0.5rem;
-    justify-content: flex-start;
-    -webkit-overflow-scrolling: touch;
   }
 
   .filter-btn {

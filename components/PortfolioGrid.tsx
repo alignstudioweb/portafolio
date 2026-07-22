@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { Filter, ChevronDown } from 'lucide-react';
 import { Project } from '@/types';
 
 export const portfolioData: Project[] = [
@@ -77,8 +78,8 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onOpenProjectModal
           </p>
         </div>
 
-        {/* Filter Buttons Segmented Bar */}
-        <div className="portfolio-filters reveal-up" role="tablist" aria-label="Filtros de portafolio">
+        {/* Desktop Filter Segmented Bar */}
+        <div className="portfolio-filters-desktop reveal-up" role="tablist" aria-label="Filtros de portafolio">
           {filterButtons.map((btn) => (
             <button
               key={btn.key}
@@ -91,6 +92,26 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onOpenProjectModal
               {btn.label}
             </button>
           ))}
+        </div>
+
+        {/* Mobile Dropdown Control */}
+        <div className="portfolio-filters-mobile reveal-up">
+          <div className="portfolio-dropdown-box">
+            <Filter style={{ width: 18, height: 18, color: 'var(--color-align-royal)', flexShrink: 0 }} />
+            <select
+              className="portfolio-select-dropdown"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+              aria-label="Filtrar proyectos de portafolio"
+            >
+              {filterButtons.map((btn) => (
+                <option key={btn.key} value={btn.key}>
+                  {btn.label}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="portfolio-dropdown-icon" style={{ width: 18, height: 18 }} />
+          </div>
         </div>
 
         <div className="portfolio-grid">
