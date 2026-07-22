@@ -77,11 +77,14 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onOpenProjectModal
           </p>
         </div>
 
-        {/* Filter Buttons */}
-        <div className="portfolio-filters reveal-up">
+        {/* Filter Buttons Segmented Bar */}
+        <div className="portfolio-filters reveal-up" role="tablist" aria-label="Filtros de portafolio">
           {filterButtons.map((btn) => (
             <button
               key={btn.key}
+              type="button"
+              role="tab"
+              aria-selected={filter === btn.key}
               className={`filter-btn ${filter === btn.key ? 'active' : ''}`}
               onClick={() => setFilter(btn.key)}
             >
