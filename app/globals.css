@@ -712,6 +712,8 @@ button {
 
 .cat-slide {
   min-width: 100%;
+  width: 100%;
+  flex: 0 0 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
