@@ -26,9 +26,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             </h1>
 
             <p className="hero-subtitle">
-              <span className="font-accent">
-                &quot;Creamos sitios institucionales, catálogos con CMS y plataformas e-commerce para impulsar negocios en Rafaela y la región.&quot;
-              </span>
+              Creamos sitios institucionales, catálogos con CMS y plataformas e-commerce para impulsar negocios en Rafaela y la región.
             </p>
 
             <div className="hero-buttons">
