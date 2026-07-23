@@ -7,7 +7,7 @@
 @font-face {
   font-family: 'Khaviax';
   src: local('Khaviax'), local('Khaviax-Bold'), url('/fonts/Khaviax.woff2') format('woff2'), url('/fonts/Khaviax.ttf') format('truetype');
-  font-weight: 700 900;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -15,7 +15,7 @@
 @font-face {
   font-family: 'Reaons';
   src: local('Reaons'), local('Reaons-Regular'), url('/fonts/Reaons.woff2') format('woff2'), url('/fonts/Reaons.ttf') format('truetype');
-  font-weight: 400 700;
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
