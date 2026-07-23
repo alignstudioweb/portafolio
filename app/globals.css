@@ -40,12 +40,12 @@
   --text-light: #94A3B8;
   --text-white: #FFFFFF;
   
-  /* Matriz Tipográfica: Principal (Khaviax) & Secundaria (Reaons) */
-  --font-h1: 'Khaviax', 'Unbounded', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-h2: 'Khaviax', 'Unbounded', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-h3: 'Khaviax', 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Reaons', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-accent: 'Khaviax', 'JetBrains Mono', monospace;
+  /* Matriz Tipográfica: Principal (Asset) & Secundaria (Aboreto) */
+  --font-h1: 'Asset', 'Unbounded', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-h2: 'Asset', 'Unbounded', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-h3: 'Asset', 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Aboreto', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-accent: 'Asset', 'JetBrains Mono', monospace;
   
   /* Gradients */
   --grad-logo: linear-gradient(135deg, #1D4ED8 0%, #0284C7 50%, #00A8E8 100%);
