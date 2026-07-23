@@ -3,6 +3,23 @@
    Identity: Innovation, Trust, Technology, Elegance
    ========================================================================== */
 
+/* Declaraciones de Fuentes Personalizadas */
+@font-face {
+  font-family: 'Khaviax';
+  src: local('Khaviax'), local('Khaviax-Bold'), url('/fonts/Khaviax.woff2') format('woff2'), url('/fonts/Khaviax.ttf') format('truetype');
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Reaons';
+  src: local('Reaons'), local('Reaons-Regular'), url('/fonts/Reaons.woff2') format('woff2'), url('/fonts/Reaons.ttf') format('truetype');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Paleta Cromática Original ALIGN STUDIO - Azul Real & Cobalto (#1D4ED8 / #2563EB) */
   --color-align-royal: #1D4ED8;
@@ -23,12 +40,12 @@
   --text-light: #94A3B8;
   --text-white: #FFFFFF;
   
-  /* Matriz Tipográfica Tecnológica de Alto Impacto Dramático */
-  --font-h1: 'Unbounded', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-h2: 'Unbounded', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-h3: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-accent: 'JetBrains Mono', monospace;
+  /* Matriz Tipográfica: Principal (Khaviax) & Secundaria (Reaons) */
+  --font-h1: 'Khaviax', 'Unbounded', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-h2: 'Khaviax', 'Unbounded', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-h3: 'Khaviax', 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Reaons', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-accent: 'Khaviax', 'JetBrains Mono', monospace;
   
   /* Gradients */
   --grad-logo: linear-gradient(135deg, #1D4ED8 0%, #0284C7 50%, #00A8E8 100%);

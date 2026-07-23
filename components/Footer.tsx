@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
           <a href="#servicios" className="footer-thin-link">Servicios</a>
           <a href="#portafolio" className="footer-thin-link">Portafolio</a>
           <a href="#proceso" className="footer-thin-link">Proceso</a>
-          <a href="mailto:contacto@alignstudio.design" className="footer-thin-link">contacto@alignstudio.design</a>
+          <a href="mailto:contacto@alignstudio.design" className="footer-thin-link">alignstudio.web@gmail.com</a>
         </div>
 
         <div className="footer-thin-copy">
