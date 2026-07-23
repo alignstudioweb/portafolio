@@ -356,17 +356,19 @@ button {
 }
 
 .hero-title {
-  font-size: clamp(2.4rem, 4.5vw, 3.75rem);
-  font-weight: 900;
-  line-height: 1.12;
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 300;
+  line-height: 1.2;
   color: var(--color-align-royal);
-  margin: 1.25rem 0 1.25rem 0;
+  margin: 1rem 0 1rem 0;
+  letter-spacing: 0.01em;
 }
 
 .hero-subtitle {
-  font-size: 1.15rem;
+  font-size: 0.95rem;
+  font-weight: 300;
   color: var(--text-muted);
-  margin-bottom: 2.25rem;
+  margin-bottom: 2rem;
   line-height: 1.65;
 }
 
@@ -391,8 +393,8 @@ button {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 300;
   color: var(--text-main);
 }
 
@@ -430,10 +432,10 @@ button {
   right: 24px;
   background: var(--bg-primary);
   border: 1px solid var(--glass-border);
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 0.85rem;
   border-radius: var(--radius-pill);
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-size: 0.75rem;
+  font-weight: 300;
   color: #10B981;
   box-shadow: var(--shadow-subtle);
   display: flex;
@@ -443,22 +445,22 @@ button {
 
 /* Sobre Nosotros */
 .about-section {
-  padding: 7rem 0;
+  padding: 5.5rem 0;
   background-color: var(--bg-primary);
 }
 
 .about-bento {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.75rem;
-  margin-top: 3.5rem;
+  gap: 1.5rem;
+  margin-top: 3rem;
 }
 
 .about-bento-card {
   background: var(--bg-secondary);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 1.75rem;
   transition: all var(--transition-normal);
   display: flex;
   flex-direction: column;
@@ -472,16 +474,16 @@ button {
 }
 
 .about-icon {
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius-md);
   background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(0, 168, 232, 0.15) 100%);
   color: var(--color-align-royal);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  margin-bottom: 1.25rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
   transition: all var(--transition-fast);
 }
 
@@ -491,35 +493,36 @@ button {
 }
 
 .about-bento-card h3 {
-  font-size: 1.25rem;
-  font-weight: 800;
+  font-size: 1.05rem;
+  font-weight: 400;
   color: var(--color-align-royal);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .about-bento-card p {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
+  font-weight: 300;
   color: var(--text-muted);
   line-height: 1.6;
 }
 
 /* Servicios */
 .services-section {
-  padding: 7rem 0;
+  padding: 5.5rem 0;
   background: var(--bg-secondary);
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.75rem;
+  gap: 1.5rem;
 }
 
 .service-card {
   background: var(--bg-primary);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
-  padding: 2.25rem;
+  padding: 1.85rem;
   transition: all var(--transition-normal);
   display: flex;
   flex-direction: column;
@@ -533,15 +536,15 @@ button {
 }
 
 .service-icon-box {
-  width: 52px;
-  height: 52px;
+  width: 46px;
+  height: 46px;
   border-radius: var(--radius-md);
   background: rgba(37, 99, 235, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-align-royal);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   transition: all var(--transition-fast);
 }
 
@@ -551,23 +554,24 @@ button {
 }
 
 .service-card h3 {
-  font-size: 1.3rem;
-  font-weight: 800;
+  font-size: 1.05rem;
+  font-weight: 400;
   color: var(--color-align-royal);
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .service-card p {
-  font-size: 0.925rem;
+  font-size: 0.85rem;
+  font-weight: 300;
   color: var(--text-muted);
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .service-link {
   font-family: var(--font-h3);
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-weight: 400;
+  font-size: 0.825rem;
   color: var(--color-align-royal);
   display: inline-flex;
   align-items: center;
@@ -579,7 +583,7 @@ button {
 
 /* Portafolio */
 .portfolio-section {
-  padding: 7rem 0;
+  padding: 5.5rem 0;
   background-color: var(--bg-primary);
 }
 
@@ -588,7 +592,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 2.5rem auto;
   padding: 0.35rem;
   background: var(--bg-secondary);
   border: 1px solid var(--glass-border);
@@ -624,10 +628,10 @@ button {
 
 .portfolio-select-dropdown {
   width: 100%;
-  padding: 0.8rem 2.25rem 0.8rem 0.6rem;
+  padding: 0.7rem 2.25rem 0.7rem 0.6rem;
   font-family: var(--font-h3);
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-size: 0.85rem;
+  font-weight: 300;
   color: var(--color-align-royal);
   background: transparent;
   border: none;
@@ -645,11 +649,11 @@ button {
 }
 
 .filter-btn {
-  padding: 0.55rem 1.25rem;
+  padding: 0.45rem 1.1rem;
   border-radius: var(--radius-pill);
   font-family: var(--font-h3);
-  font-size: 0.875rem;
-  font-weight: 700;
+  font-size: 0.8rem;
+  font-weight: 300;
   color: var(--text-muted);
   background: transparent;
   border: 1px solid transparent;
@@ -673,7 +677,7 @@ button {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.25rem;
+  gap: 1.75rem;
 }
 
 .portfolio-card {
@@ -692,7 +696,7 @@ button {
 
 .portfolio-img-wrapper {
   position: relative;
-  height: 300px;
+  height: 260px;
   overflow: hidden;
 }
 
@@ -715,7 +719,7 @@ button {
   transition: opacity var(--transition-fast);
   display: flex;
   align-items: flex-end;
-  padding: 1.75rem;
+  padding: 1.5rem;
 }
 
 .portfolio-card:hover .portfolio-overlay {
@@ -723,28 +727,28 @@ button {
 }
 
 .portfolio-content {
-  padding: 1.75rem;
+  padding: 1.5rem;
 }
 
 .portfolio-tag {
   font-family: var(--font-accent);
-  font-weight: 700;
-  font-size: 0.95rem;
+  font-weight: 300;
+  font-size: 0.825rem;
   color: var(--color-studio-blue);
   margin-bottom: 0.25rem;
   display: block;
 }
 
 .portfolio-title {
-  font-size: 1.4rem;
-  font-weight: 800;
+  font-size: 1.1rem;
+  font-weight: 400;
   color: var(--color-align-royal);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
-/* Carrusel Gatitos 🐱 */
+/* Carrusel gatitos */
 .cat-process-section {
-  padding: 7rem 0;
+  padding: 5.5rem 0;
   background: var(--bg-secondary);
   position: relative;
   overflow: hidden;
@@ -776,8 +780,8 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 2.5rem;
-  padding: 3rem;
+  gap: 2.25rem;
+  padding: 2.5rem;
 }
 
 .cat-slide-img-box {
@@ -789,44 +793,45 @@ button {
 
 .cat-slide-img {
   width: 100%;
-  height: 340px;
+  height: 300px;
   object-fit: cover;
   display: block;
 }
 
 .cat-slide-step-num {
   font-family: var(--font-accent);
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 300;
   color: var(--color-cyan-bright);
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   display: block;
 }
 
 .cat-slide-title {
-  font-size: 2rem;
-  font-weight: 900;
+  font-size: 1.4rem;
+  font-weight: 400;
   color: var(--color-align-royal);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .cat-slide-desc {
-  font-size: 1rem;
+  font-size: 0.875rem;
+  font-weight: 300;
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 .cat-carousel-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1.75rem;
 }
 
 .cat-carousel-btn {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: var(--bg-primary);
   border: 1px solid var(--glass-border);
@@ -850,8 +855,8 @@ button {
 }
 
 .cat-dot {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: var(--bg-tertiary);
   cursor: pointer;
@@ -859,43 +864,45 @@ button {
 }
 
 .cat-dot.active {
-  width: 28px;
+  width: 24px;
   border-radius: var(--radius-pill);
   background: var(--color-align-royal);
 }
 
 /* CTA */
 .cta-section {
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 
 .cta-box {
   background: var(--grad-cta);
   border-radius: var(--radius-xl);
-  padding: 4.5rem 2.5rem;
+  padding: 3.5rem 2rem;
   text-align: center;
   color: var(--text-white);
   box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.4);
 }
 
 .cta-title {
-  font-size: clamp(2rem, 4vw, 3.25rem);
-  font-weight: 900;
-  margin-bottom: 1.25rem;
+  font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 0.01em;
 }
 
 .cta-desc {
-  font-size: 1.1rem;
+  font-size: 0.925rem;
+  font-weight: 300;
   color: var(--color-cyan-light);
-  max-width: 620px;
-  margin: 0 auto 2.25rem auto;
+  max-width: 580px;
+  margin: 0 auto 1.85rem auto;
 }
 
 /* Footer */
 .footer {
   background: var(--bg-dark);
   color: var(--text-light);
-  padding: 1.75rem 0;
+  padding: 1.5rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -904,22 +911,23 @@ button {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .footer-thin-brand {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 900;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .footer-thin-links {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  font-size: 0.875rem;
+  gap: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 .footer-thin-link {
@@ -999,19 +1007,20 @@ button {
 
 .form-label {
   display: block;
-  font-size: 0.875rem;
-  font-weight: 700;
+  font-size: 0.825rem;
+  font-weight: 300;
   color: var(--color-align-royal);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 .form-input, .form-select, .form-textarea {
   width: 100%;
-  padding: 0.85rem 1rem;
+  padding: 0.75rem 0.9rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--glass-border);
   background: var(--bg-secondary);
-  font-size: 1rem; /* Prevents auto-zoom on iOS Safari */
+  font-size: 0.925rem;
+  font-weight: 300;
   color: var(--text-main);
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
@@ -1027,7 +1036,9 @@ button {
   bottom: 2rem; right: 2rem;
   background: var(--color-align-royal);
   color: var(--text-white);
-  padding: 1rem 1.5rem;
+  padding: 0.85rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 300;
   border-radius: var(--radius-md);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -1057,19 +1068,19 @@ button {
 /* Paquetes Comercial Fase 1 Grid */
 .main-packages-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .comp-services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
 }
 
 .package-card {
-  padding: 2.25rem;
+  padding: 1.75rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1090,18 +1101,18 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .package-time-badge {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
-  font-weight: 700;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 300;
   color: var(--color-studio-blue);
-  margin-bottom: 1.25rem;
-  padding: 0.4rem 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.65rem;
   background: var(--bg-secondary);
   border-radius: var(--radius-sm);
 }
@@ -1109,15 +1120,16 @@ button {
 .package-feature-list {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  margin-bottom: 1.75rem;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .package-feature-item {
   display: flex;
   align-items: flex-start;
-  gap: 0.5rem;
-  font-size: 0.875rem;
+  gap: 0.45rem;
+  font-size: 0.825rem;
+  font-weight: 300;
   color: var(--text-main);
 }
 

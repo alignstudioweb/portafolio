@@ -36,11 +36,11 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onOpenContact }) => 
                     </span>
                   </div>
 
-                  <h3 style={{ fontSize: '1.35rem', color: 'var(--color-align-royal)', marginBottom: '0.5rem' }}>
+                  <h3 style={{ fontSize: '1.05rem', fontWeight: 400, color: 'var(--color-align-royal)', marginBottom: '0.5rem' }}>
                     {pkg.title}
                   </h3>
 
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1.25rem', minHeight: '44px' }}>
+                  <p style={{ fontSize: '0.825rem', fontWeight: 300, color: 'var(--text-muted)', marginBottom: '1.25rem', minHeight: '40px' }}>
                     <strong>Ideal para:</strong> {pkg.target}
                   </p>
 
@@ -76,7 +76,7 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onOpenContact }) => 
         <div style={{ marginTop: '3.5rem' }}>
           <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
             <span className="badge" style={{ background: 'rgba(37, 99, 235, 0.06)' }}>SERVICIOS COMPLEMENTARIOS</span>
-            <h3 style={{ fontSize: '1.6rem', color: 'var(--color-align-royal)', marginTop: '0.5rem' }}>
+            <h3 style={{ fontSize: '1.2rem', fontWeight: 400, color: 'var(--color-align-royal)', marginTop: '0.5rem' }}>
               Servicios Especializados de Alto Valor
             </h3>
           </div>
@@ -94,10 +94,10 @@ export const ServicesGrid: React.FC<ServicesGridProps> = ({ onOpenContact }) => 
                   <div className="about-icon" style={{ width: 44, height: 44, marginBottom: '1rem' }}>
                     <CompIcon style={{ width: 22, height: 22 }} />
                   </div>
-                  <h4 style={{ fontSize: '1.1rem', color: 'var(--color-align-royal)', marginBottom: '0.4rem' }}>
+                  <h4 style={{ fontSize: '0.95rem', fontWeight: 400, color: 'var(--color-align-royal)', marginBottom: '0.4rem' }}>
                     {comp.title}
                   </h4>
-                  <p style={{ fontSize: '0.875rem', color: 'var(--text-muted)' }}>
+                  <p style={{ fontSize: '0.825rem', fontWeight: 300, color: 'var(--text-muted)' }}>
                     {comp.desc}
                   </p>
                 </div>

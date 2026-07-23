@@ -75,7 +75,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
         
         <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
           <span className="badge">Solicitud de Presupuesto</span>
-          <h3 style={{ fontSize: '1.6rem', fontWeight: 900, color: 'var(--color-align-royal)', marginTop: '0.5rem' }}>
+          <h3 style={{ fontSize: '1.2rem', fontWeight: 400, color: 'var(--color-align-royal)', marginTop: '0.5rem' }}>
             Conversemos sobre tu proyecto
           </h3>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Te enviamos una propuesta detallada en menos de 24 horas.</p>

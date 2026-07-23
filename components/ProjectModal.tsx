@@ -29,7 +29,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
         <button className="modal-close" onClick={onClose} aria-label="Cerrar modal">&times;</button>
         
         <span className="badge">{project.categoryLabel}</span>
-        <h3 style={{ fontSize: '1.7rem', fontWeight: 900, color: 'var(--color-align-royal)', margin: '0.75rem 0' }}>
+        <h3 style={{ fontSize: '1.25rem', fontWeight: 400, color: 'var(--color-align-royal)', margin: '0.75rem 0' }}>
           {project.title}
         </h3>
 

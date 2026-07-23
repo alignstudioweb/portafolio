@@ -134,9 +134,10 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onOpenProjectModal
                   <div className="portfolio-overlay">
                     <span style={{
                       background: 'var(--bg-primary)',
-                      padding: '0.5rem 1rem',
+                      padding: '0.4rem 0.85rem',
                       borderRadius: '999px',
-                      fontWeight: 700,
+                      fontSize: '0.8rem',
+                      fontWeight: 400,
                       color: 'var(--color-align-royal)'
                     }}>
                       Ver detalle del proyecto →
@@ -146,7 +147,7 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onOpenProjectModal
                 <div className="portfolio-content">
                   <span className="portfolio-tag">{project.categoryLabel}</span>
                   <h3 className="portfolio-title">{project.title}</h3>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.925rem' }}>{project.desc}</p>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.825rem', fontWeight: 300 }}>{project.desc}</p>
                 </div>
               </div>
             );
