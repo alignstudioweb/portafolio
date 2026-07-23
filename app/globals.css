@@ -3,23 +3,6 @@
    Identity: Innovation, Trust, Technology, Elegance
    ========================================================================== */
 
-/* Declaraciones de Fuentes Personalizadas */
-@font-face {
-  font-family: 'Khaviax';
-  src: local('Khaviax'), local('Khaviax-Bold'), url('/fonts/Khaviax.woff2') format('woff2'), url('/fonts/Khaviax.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Reaons';
-  src: local('Reaons'), local('Reaons-Regular'), url('/fonts/Reaons.woff2') format('woff2'), url('/fonts/Reaons.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   /* Paleta Cromática Original ALIGN STUDIO - Azul Real & Cobalto (#1D4ED8 / #2563EB) */
   --color-align-royal: #1D4ED8;
@@ -41,11 +24,11 @@
   --text-white: #FFFFFF;
   
   /* Matriz Tipográfica Ultra-Fina: Principal & Secundaria */
-  --font-h1: 'Asset', 'Outfit', 'Montserrat', 'Aboreto', -apple-system, sans-serif;
-  --font-h2: 'Asset', 'Outfit', 'Montserrat', 'Aboreto', -apple-system, sans-serif;
-  --font-h3: 'Outfit', 'Montserrat', 'Aboreto', -apple-system, sans-serif;
-  --font-body: 'Aboreto', 'Plus Jakarta Sans', 'Montserrat', -apple-system, sans-serif;
-  --font-accent: 'Outfit', 'Aboreto', monospace;
+  --font-h1: 'Outfit', 'Unbounded', -apple-system, sans-serif;
+  --font-h2: 'Outfit', 'Unbounded', -apple-system, sans-serif;
+  --font-h3: 'Space Grotesk', 'Outfit', -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-accent: 'JetBrains Mono', monospace;
 
   /* Gradients */
   --grad-logo: linear-gradient(135deg, #1D4ED8 0%, #0284C7 50%, #00A8E8 100%);
