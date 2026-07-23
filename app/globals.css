@@ -104,28 +104,28 @@ body {
 
 h1, .hero-title {
   font-family: var(--font-h1);
-  letter-spacing: 0.04em;
-  font-weight: 200;
+  letter-spacing: 0.05em;
+  font-weight: 100;
   text-transform: uppercase;
 }
 
 h2, .section-title {
   font-family: var(--font-h2);
-  letter-spacing: 0.04em;
-  font-weight: 200;
+  letter-spacing: 0.05em;
+  font-weight: 100;
   text-transform: uppercase;
 }
 
 h3, h4, h5, h6 {
   font-family: var(--font-h3);
-  letter-spacing: 0.02em;
-  font-weight: 300;
+  letter-spacing: 0.03em;
+  font-weight: 200;
 }
 
-p, .hero-subtitle, .section-subtitle, .about-bento-card p, .service-card p, .cat-slide-desc {
+p, .about-bento-card p, .service-card p, .cat-slide-desc {
   font-family: var(--font-body);
   font-size: 0.875rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.65;
 }
 
@@ -213,20 +213,20 @@ button {
 }
 
 .section-title {
-  font-size: clamp(1.5rem, 3.2vw, 2.2rem);
-  font-weight: 200;
-  letter-spacing: 0.04em;
-  line-height: 1.15;
+  font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  line-height: 1.18;
   margin-top: 0.6rem;
   margin-bottom: 0.85rem;
   color: var(--color-align-royal);
 }
 
 .section-subtitle {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  font-weight: 200;
+  font-size: 1.05rem;
+  color: var(--bg-dark);
+  line-height: 1.65;
+  font-weight: 400;
 }
 
 /* Buttons */
@@ -361,20 +361,20 @@ button {
 }
 
 .hero-title {
-  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-  font-weight: 300;
-  line-height: 1.2;
+  font-size: clamp(1.4rem, 2.8vw, 2.1rem);
+  font-weight: 100;
+  line-height: 1.25;
   color: var(--color-align-royal);
-  margin: 1rem 0 1rem 0;
-  letter-spacing: 0.01em;
+  margin: 0.85rem 0 1rem 0;
+  letter-spacing: 0.05em;
 }
 
 .hero-subtitle {
-  font-size: 0.95rem;
-  font-weight: 300;
-  color: var(--text-muted);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--bg-dark);
   margin-bottom: 2rem;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .hero-buttons {
