@@ -23,12 +23,12 @@
   --text-light: #94A3B8;
   --text-white: #FFFFFF;
   
-  /* Matriz Tipográfica Ultra-Fina: Principal & Secundaria */
-  --font-h1: 'Outfit', 'Unbounded', -apple-system, sans-serif;
-  --font-h2: 'Outfit', 'Unbounded', -apple-system, sans-serif;
-  --font-h3: 'Space Grotesk', 'Outfit', -apple-system, sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
-  --font-accent: 'JetBrains Mono', monospace;
+  /* Matriz Tipográfica Solicitada: Principal (Asset) & Secundaria (Aboreto) */
+  --font-h1: 'Asset', -apple-system, sans-serif;
+  --font-h2: 'Asset', -apple-system, sans-serif;
+  --font-h3: 'Asset', -apple-system, sans-serif;
+  --font-body: 'Aboreto', -apple-system, sans-serif;
+  --font-accent: 'Asset', monospace;
 
   /* Gradients */
   --grad-logo: linear-gradient(135deg, #1D4ED8 0%, #0284C7 50%, #00A8E8 100%);
