@@ -1,7 +1,11 @@
-/* ==========================================================================
-   ALIGN STUDIO - Design System & Modern Stylesheet (Global Next.js)
-   Identity: Innovation, Trust, Technology, Elegance
-   ========================================================================== */
+/* Declaración de Fuente Khaviax / Avant-Garde High-Contrast Display */
+@font-face {
+  font-family: 'Khaviax';
+  src: local('Khaviax'), url('/fonts/Khaviax.ttf') format('truetype'), url('/fonts/Khaviax.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   /* Paleta Cromática Original ALIGN STUDIO - Azul Real & Cobalto (#1D4ED8 / #2563EB) */
@@ -23,8 +27,8 @@
   --text-light: #94A3B8;
   --text-white: #FFFFFF;
   
-  /* Matriz Tipográfica Refinada (Linear / Vercel Aesthetic) */
-  --font-display: 'Geologica', -apple-system, sans-serif;
+  /* Matriz Tipográfica Avant-Garde de Alto Contraste (Estilo Khaviax) */
+  --font-display: 'Khaviax', 'Syne', 'Bodoni Moda', 'Cinzel Decorative', serif;
   --font-sans: 'Inter', 'Plus Jakarta Sans', -apple-system, sans-serif;
   --font-ui: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
