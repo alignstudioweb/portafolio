@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import Image from 'next/image';
 import { Filter, ChevronDown } from 'lucide-react';
 import { Project } from '@/types';
@@ -19,7 +19,7 @@ export const portfolioData: Project[] = [
   {
     id: 2,
     title: 'Catálogo Autopatio & Inmobiliaria Dinámico',
-    category: 'diseno',
+    category: 'catalogos',
     categoryLabel: 'Catálogo Web (Con CMS / Supabase)',
     image: '/assets/portfolio_2.jpg',
     desc: 'Catálogo de vehículos y propiedades con buscador inteligente, filtros avanzados y panel de administración en tiempo real.',
@@ -29,7 +29,7 @@ export const portfolioData: Project[] = [
   {
     id: 3,
     title: 'Plataforma E-Commerce & MercadoPago SDK',
-    category: 'ia',
+    category: 'ecommerce',
     categoryLabel: 'E-Commerce Custom a Medida',
     image: '/assets/portfolio_3.jpg',
     desc: 'Tienda transaccional con checkout optimizado, cobros automatizados con MercadoPago y gestión de envíos.',
@@ -39,12 +39,32 @@ export const portfolioData: Project[] = [
   {
     id: 4,
     title: 'Setup & Design Tienda Nube Express',
-    category: 'branding',
+    category: 'tiendanube',
     categoryLabel: 'Tienda Nube (Setup & Capacitación)',
     image: '/assets/portfolio_4.jpg',
     desc: 'Configuración estética, banners institucionales, pasarelas de pago y capacitación 1 a 1 para marca de indumentaria.',
     fullDesc: 'Puesta a punto completa en tiempo récord de 72 hs. Incluye vinculación de dominio .com.ar, configuración de cuotas sin interés y capacitación ejecutiva para gestión autónoma.',
     tags: ['Tienda Nube', 'Branding Banners', 'Setup Express', 'Capacitación 1a1']
+  },
+  {
+    id: 5,
+    title: 'Sitio Web Corporativo & Portal B2B',
+    category: 'desarrollo',
+    categoryLabel: 'Web Institucional / Empresa',
+    image: '/assets/cat_strategy.jpg',
+    desc: 'Rediseño web corporativo con alta velocidad de carga, estructura SEO multisección y formulario inteligente.',
+    fullDesc: 'Desarrollo web corporativo enfocado en conversión B2B y presencia de marca regional para empresas de servicios e industria.',
+    tags: ['Web Corporativa', 'UX/UI Design', 'Next.js', 'SEO B2B']
+  },
+  {
+    id: 6,
+    title: 'Catálogo de Repuestos & Maquinaria Agro',
+    category: 'catalogos',
+    categoryLabel: 'Catálogo CMS / Agro',
+    image: '/assets/cat_launch.jpg',
+    desc: 'Catálogo interactivo de autopartes y maquinaria agroindustrial con cotizador directo por WhatsApp.',
+    fullDesc: 'Sistema de consulta rápida de repuestos con filtrado técnico por marca, modelo y año para el sector agroindustrial.',
+    tags: ['Catálogo Agro', 'CMS Supabase', 'Filtro Técnico', 'WhatsApp API']
   }
 ];
 
@@ -58,20 +78,34 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onOpenProjectModal
   const filterButtons = [
     { label: 'Todos los Desarrollos', key: 'todos' },
     { label: 'Webs Institucionales', key: 'desarrollo' },
-    { label: 'Catálogos Dinámicos', key: 'diseno' },
-    { label: 'E-Commerce Custom', key: 'ia' },
-    { label: 'Tienda Nube Setup', key: 'branding' }
+    { label: 'Catálogos Dinámicos', key: 'catalogos' },
+    { label: 'E-Commerce Custom', key: 'ecommerce' },
+    { label: 'Tienda Nube Setup', key: 'tiendanube' }
   ];
 
-  const filteredProjects = filter === 'todos'
-    ? portfolioData
-    : portfolioData.filter(p => p.category === filter);
+  const filteredProjects = useMemo(() => {
+    if (filter === 'todos') return portfolioData;
+    return portfolioData.filter(p => {
+      if (filter === 'desarrollo') {
+        return p.category === 'desarrollo' || p.categoryLabel.toLowerCase().includes('institucional') || p.categoryLabel.toLowerCase().includes('muestra');
+      }
+      if (filter === 'catalogos') {
+        return p.category === 'catalogos' || p.categoryLabel.toLowerCase().includes('catálogo') || p.categoryLabel.toLowerCase().includes('cms');
+      }
+      if (filter === 'ecommerce') {
+        return p.category === 'ecommerce' || p.categoryLabel.toLowerCase().includes('e-commerce') || p.category === 'tiendanube';
+      }
+      if (filter === 'tiendanube') {
+        return p.category === 'tiendanube' || p.categoryLabel.toLowerCase().includes('nube');
+      }
+      return p.category === filter;
+    });
+  }, [filter]);
 
   return (
     <section className="portfolio-section" id="portafolio">
       <div className="container">
         <div className="section-header reveal-up">
-          <span className="badge">CASOS DE ÉXITO & PORTAFOLIO</span>
           <h2 className="section-title">Proyectos Desarrollados por Nuestro Equipo</h2>
           <p className="section-subtitle">
             Ejemplos reales de soluciones web diseñadas para resolver necesidades comerciales e industriales.
@@ -87,7 +121,10 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onOpenProjectModal
               role="tab"
               aria-selected={filter === btn.key}
               className={`filter-btn ${filter === btn.key ? 'active' : ''}`}
-              onClick={() => setFilter(btn.key)}
+              onClick={(e) => {
+                e.preventDefault();
+                setFilter(btn.key);
+              }}
             >
               {btn.label}
             </button>
@@ -115,43 +152,49 @@ export const PortfolioGrid: React.FC<PortfolioGridProps> = ({ onOpenProjectModal
         </div>
 
         <div className="portfolio-grid">
-          {filteredProjects.map((project, index) => {
-            const delayClass = `delay-${((index % 3) + 1) * 100}`;
-            return (
-              <div
-                key={project.id}
-                className={`portfolio-card reveal-up ${delayClass}`}
-                onClick={() => onOpenProjectModal(project)}
-              >
-                <div className="portfolio-img-wrapper">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="portfolio-img"
-                  />
-                  <div className="portfolio-overlay">
-                    <span style={{
-                      background: 'var(--bg-primary)',
-                      padding: '0.4rem 0.85rem',
-                      borderRadius: '999px',
-                      fontSize: '0.8rem',
-                      fontWeight: 400,
-                      color: 'var(--color-align-royal)'
-                    }}>
-                      Ver detalle del proyecto →
-                    </span>
+          {filteredProjects.length === 0 ? (
+            <div style={{ textAlign: 'center', gridColumn: '1 / -1', padding: '3rem 0', color: 'var(--text-muted)' }}>
+              <p>No hay proyectos en esta categoría por el momento.</p>
+            </div>
+          ) : (
+            filteredProjects.map((project, index) => {
+              const delayClass = `delay-${((index % 3) + 1) * 100}`;
+              return (
+                <div
+                  key={project.id}
+                  className={`portfolio-card reveal-up ${delayClass}`}
+                  onClick={() => onOpenProjectModal(project)}
+                >
+                  <div className="portfolio-img-wrapper">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="portfolio-img"
+                    />
+                    <div className="portfolio-overlay">
+                      <span style={{
+                        background: 'var(--bg-primary)',
+                        padding: '0.4rem 0.85rem',
+                        borderRadius: '999px',
+                        fontSize: '0.8rem',
+                        fontWeight: 400,
+                        color: 'var(--color-align-royal)'
+                      }}>
+                        Ver detalle del proyecto →
+                      </span>
+                    </div>
+                  </div>
+                  <div className="portfolio-content">
+                    <span className="portfolio-tag">{project.categoryLabel}</span>
+                    <h3 className="portfolio-title">{project.title}</h3>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '0.825rem', fontWeight: 300 }}>{project.desc}</p>
                   </div>
                 </div>
-                <div className="portfolio-content">
-                  <span className="portfolio-tag">{project.categoryLabel}</span>
-                  <h3 className="portfolio-title">{project.title}</h3>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.825rem', fontWeight: 300 }}>{project.desc}</p>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })
+          )}
         </div>
       </div>
     </section>

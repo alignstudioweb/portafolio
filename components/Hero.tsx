@@ -18,7 +18,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           <div className="hero-text-col reveal-up">
             <div className="badge">
               <span className="badge-dot"></span>
-              <span>ESTUDIO DE DESARROLLO WEB // ALTO RENDIMIENTO</span>
+              <span>ESTUDIO DE DESARROLLO WEB</span>
             </div>
 
             <h1 className="hero-title">
@@ -38,22 +38,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
                 <span>Ver Paquetes Web</span>
                 <ArrowDown style={{ width: 18, height: 18 }} />
               </a>
-            </div>
-
-            {/* Feature Pills */}
-            <div className="hero-features-list">
-              <div className="hero-feature-item">
-                <Zap className="hero-feature-icon" style={{ width: 18, height: 18 }} />
-                <span>Next.js & Supabase</span>
-              </div>
-              <div className="hero-feature-item">
-                <ShieldCheck className="hero-feature-icon" style={{ width: 18, height: 18 }} />
-                <span>Integración MercadoPago</span>
-              </div>
-              <div className="hero-feature-item">
-                <Bot className="hero-feature-icon" style={{ width: 18, height: 18 }} />
-                <span>Automatización WhatsApp</span>
-              </div>
             </div>
           </div>
 

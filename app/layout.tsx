@@ -30,7 +30,12 @@ export const metadata: Metadata = {
     images: ['/assets/hero_mockup.jpg']
   },
   icons: {
-    icon: '/assets/logo.png'
+    icon: [
+      { url: '/assets/favicon.png', type: 'image/png' },
+      { url: '/favicon.ico' }
+    ],
+    shortcut: '/assets/favicon.png',
+    apple: '/assets/favicon.png'
   }
 };
 
@@ -55,7 +60,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,700..900;1,6..96,700..900&family=Cinzel+Decorative:wght@700;900&family=Syne:wght@700;800&family=Geologica:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Chicle&family=Agbalumo&family=Ultra&family=Oi&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel+Decorative:wght@700;900&family=Syne:wght@700;800&family=Geologica:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
           rel="stylesheet"
         />
         <script

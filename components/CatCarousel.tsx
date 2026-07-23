@@ -57,7 +57,6 @@ export const CatCarousel: React.FC = () => {
     <section className="cat-process-section" id="proceso">
       <div className="container">
         <div className="section-header reveal-up">
-          <span className="badge">🐱 METODOLOGÍA // ALIGN STUDIO</span>
           <h2 className="section-title">Flujo de Trabajo Comercial & Desarrollo Paso a Paso</h2>
           <p className="section-subtitle">
             Transparencia total desde la toma de requerimientos hasta el lanzamiento y capacitación de tu equipo.

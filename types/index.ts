@@ -1,7 +1,7 @@
 export interface Project {
   id: number;
   title: string;
-  category: 'desarrollo' | 'diseno' | 'ia' | 'branding';
+  category: string;
   categoryLabel: string;
   image: string;
   desc: string;
