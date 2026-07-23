@@ -102,27 +102,28 @@ body {
 
 h1, .hero-title {
   font-family: var(--font-h1);
-  letter-spacing: -0.05em;
-  font-weight: 900;
+  letter-spacing: -0.02em;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 h2, .section-title {
   font-family: var(--font-h2);
-  letter-spacing: -0.04em;
-  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 h3, h4, h5, h6 {
   font-family: var(--font-h3);
-  letter-spacing: -0.03em;
-  font-weight: 800;
+  letter-spacing: -0.01em;
+  font-weight: 400;
 }
 
 p, .hero-subtitle, .section-subtitle, .about-bento-card p, .service-card p, .cat-slide-desc {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 0.975rem;
+  font-weight: 400;
   line-height: 1.65;
 }
 
@@ -182,8 +183,8 @@ button {
   border: 1px solid rgba(0, 168, 232, 0.25);
   border-radius: var(--radius-pill);
   font-family: var(--font-accent);
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 400;
   color: var(--color-align-royal);
   backdrop-filter: var(--glass-blur);
 }
@@ -210,7 +211,7 @@ button {
 
 .section-title {
   font-size: clamp(2.1rem, 4vw, 3rem);
-  font-weight: 800;
+  font-weight: 400;
   line-height: 1.15;
   margin-top: 0.75rem;
   margin-bottom: 1rem;
@@ -221,6 +222,7 @@ button {
   font-size: 1.1rem;
   color: var(--text-muted);
   line-height: 1.6;
+  font-weight: 400;
 }
 
 /* Buttons */
@@ -232,7 +234,7 @@ button {
   padding: 0.75rem 1.4rem;
   border-radius: var(--radius-pill);
   font-family: var(--font-h3);
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.925rem;
   transition: all var(--transition-normal);
   position: relative;
