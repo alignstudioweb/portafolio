@@ -99,8 +99,6 @@ h1, .hero-title {
   font-weight: 400;
   letter-spacing: 0.02em;
   text-transform: none;
-  border-left: 4px solid var(--color-cyan-bright);
-  padding-left: 1.1rem;
 }
 
 h2, .section-title {
