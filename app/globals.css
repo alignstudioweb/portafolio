@@ -24,7 +24,7 @@
   --text-white: #FFFFFF;
   
   /* Matriz Tipográfica Refinada (Linear / Vercel Aesthetic) */
-  --font-display: 'Asset', -apple-system, sans-serif;
+  --font-display: 'Geologica', -apple-system, sans-serif;
   --font-sans: 'Inter', 'Plus Jakarta Sans', -apple-system, sans-serif;
   --font-ui: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -213,7 +213,7 @@ button {
 .section-subtitle {
   font-family: var(--font-sans);
   font-size: 1.05rem;
-  color: var(--bg-dark);
+  color: #1E293B;
   line-height: 1.75;
   font-weight: 400;
 }
@@ -361,8 +361,8 @@ button {
 .hero-subtitle {
   font-family: var(--font-sans);
   font-size: 1.25rem;
-  font-weight: 500;
-  color: #000000;
+  font-weight: 400;
+  color: #1E293B;
   margin-bottom: 2.75rem;
   line-height: 1.75;
 }
