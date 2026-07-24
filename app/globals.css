@@ -27,8 +27,8 @@
   --text-light: #94A3B8;
   --text-white: #FFFFFF;
   
-  /* Matriz Tipográfica Avant-Garde (Ultra Display) */
-  --font-display: 'Ultra', serif;
+  /* Matriz Tipográfica Avant-Garde (Questrial Display) */
+  --font-display: 'Questrial', sans-serif;
   --font-sans: 'Inter', 'Plus Jakarta Sans', -apple-system, sans-serif;
   --font-ui: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
