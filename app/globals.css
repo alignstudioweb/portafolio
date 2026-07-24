@@ -106,7 +106,7 @@ h2, .section-title {
   font-family: var(--font-display);
   letter-spacing: 0.03em;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.8;
   text-transform: uppercase;
 }
 
@@ -211,7 +211,7 @@ button {
   font-size: clamp(1.2rem, 3.2vw, 2.2rem);
   font-weight: 400;
   letter-spacing: 0.03em;
-  line-height: 1.5;
+  line-height: 1.8;
   margin-top: 0.75rem;
   margin-bottom: 1.25rem;
   color: var(--color-align-royal);
@@ -1269,7 +1269,7 @@ button {
 
   .section-title {
     font-size: clamp(1.15rem, 4.8vw, 1.45rem);
-    line-height: 1.4;
+    line-height: 1.65;
   }
 
   .hero-buttons {
